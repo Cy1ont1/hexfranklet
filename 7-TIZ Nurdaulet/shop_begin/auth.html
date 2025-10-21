@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин — Вход / Регистрация</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <div class="auth-container" id="auth-container">
+      <div>
+        <button class="show-relog" id="show-login">Вход</button>
+        <button class="show-relog" id="show-register">Регистрация</button>
+      </div>
+
+      <div id="login-form" class="auth-form">
+        <!-- TODO: форма входа (email + пароль) -->
+        <input placeholder="Имя" maxlength="32" type="text" name="username-log" id="username-log">
+        <input placeholder="Эл.почта" maxlength="32" type="email" name="email-log" id="email-log">
+        <input placeholder="Пароль" maxlength="32" type="text" name="password-log" id="password-log">
+        <button class="login-btn" id="login-btn">Войти</button>
+      </div>
+      
+      <div id="register-form" class="auth-form" style="display:none;">
+        <!-- TODO: форма регистрации (имя + email + пароль) -->
+        <input maxlength="32" type="text" name="username-reg" id="username-reg">
+        <input maxlength="32" type="email" name="email-reg" id="email-reg">
+        <input maxlength="32" type="text" name="passwordMake" id="passwordMake">
+        <input maxlength="32" type="text" name="passwordConfirm" id="passwordConfirm">
+        <button class="register-btn" id="register-btn">Зарегистривоваться</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/models.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
